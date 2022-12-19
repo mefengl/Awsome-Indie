@@ -51,3 +51,14 @@ npm install -g pm2
 # pm2 run json-server, first `--` means pass through follow option to json-server rather than pm2
 pm2 start json-server -- db.json --port 6661
 ```
+
+## Example
+```bash
+# under the folder that have public folder, you don't need to have db.json, which will created automaticlly
+pm2 --name <name> start json-server -- db.json --port <port>
+```
+have this in `Caddyfile`
+redir /<name> /<name>/ 
+handle_path /<name>* { 
+        reverse_proxy :<port> 
+} 
