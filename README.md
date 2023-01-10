@@ -1,6 +1,10 @@
 # Awsome-Indie
 Simple tools enable a simple person to make a difference.
 
+## Playground
+### Python
+https://www.online-python.com/
+
 ## Backend
 
 ### localhost
